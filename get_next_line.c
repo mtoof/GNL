@@ -64,22 +64,22 @@ static char	*trim_buffer(char *buffer)
 
 static char	*read_and_stash(int fd, char *buffer)
 {
-	int		readed_char;
+	int		read_char;
 	char	*stash;
 	char	*tmp;
 
 	if (!buffer)
 		buffer = ft_calloc(1, 1);
-	readed_char = 1;
+	read_char = 1;
 	stash = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!stash)
 		return (NULL);
-	while (readed_char > 0)
+	while (read_char > 0)
 	{
-		readed_char = read(fd, stash, BUFFER_SIZE);
-		if (readed_char == -1)
+		read_char = read(fd, stash, BUFFER_SIZE);
+		if (read_char == -1)
 			return (NULL);
-		stash[readed_char] = 0;
+		stash[read_char] = 0;
 		tmp = ft_strjoin(buffer, stash);
 		free(buffer);
 		buffer = tmp;
