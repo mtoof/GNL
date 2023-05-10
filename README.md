@@ -8,8 +8,7 @@
 	on manipulating files for data management and persistence.
 	This project consists of coding a function that returns one line at a time from a text file.
 
-For more detailed information, look at the [**subject of this project**]
-
+For more detailed information, look at the [**subject of this project**](https://github.com/mtoof/GNL/blob/f71083091f8f775a7b4a17fc7e449333b44920d8/en.subject.pdf)
 
 ## 🛠️ Usage
 
